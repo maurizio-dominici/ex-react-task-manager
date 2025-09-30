@@ -1,0 +1,63 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Imposta font moderno */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Importa Inter da Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+/* Navbar container */
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* NavLink styling */
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* Active link */
+nav a.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #007bff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
