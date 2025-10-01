@@ -124,3 +124,62 @@ td.done {
   color: #fff;
   border-radius: 4px;
 }
+
+/* css form */
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+textarea,
+select {
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #2980b9;
+}

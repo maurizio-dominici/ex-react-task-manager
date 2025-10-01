@@ -116,9 +116,10 @@ Stato (status) → Select non controllata (useRef), con opzioni "To do", "Doing"
 
 ```js
 const symbols = "!@#$%^&*()-_=+[]{}|;:'\\",.<>?/`~";
-Gestione del Submit del Form:
 
 ```
+
+Gestione del Submit del Form:
 
 4. Al click del bottone "Aggiungi Task", il form deve SOLO stampare in console l’oggetto task con i valori inseriti (NON deve ancora essere inviata la richiesta all’API).
 
