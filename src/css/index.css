@@ -225,3 +225,84 @@ button:hover {
 .remove.button:hover {
   background-color: #c0392b;
 }
+
+/* Sfondo semitrasparente */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenitore modale */
+.modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Titolo */
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Azioni */
+.modal-action {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* Bottoni */
+.modal-action button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-action button:first-child {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+.modal-action button:first-child:hover {
+  background-color: #95a5a6;
+}
+
+.modal-action button:last-child {
+  background-color: #3498db;
+  color: white;
+}
+
+.modal-action button:last-child:hover {
+  background-color: #2980b9;
+}
+
+/* Animazione */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
