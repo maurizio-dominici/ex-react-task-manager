@@ -1,5 +1,6 @@
 import { useMemo, useRef, useState, useContext } from "react";
 import { GlobalContext } from "../contex/GlobalContext";
+import { useNavigate } from "react-router-dom";
 
 export default function AddTask() {
   const { addTasks } = useContext(GlobalContext);
@@ -8,6 +9,7 @@ export default function AddTask() {
   const statusRef = useRef();
   const arrayOption = ["To do", "Doing", "Done"];
   const symbols = "!@#$%^&*()-_=+[]{}|;:'\\\",.<>?/`~";
+  const navigate = useNavigate();
 
   const taskTitleError = useMemo(() => {
     if (!taskTitle.trim()) {
@@ -35,6 +37,7 @@ export default function AddTask() {
     try {
       await addTasks(newTask);
       alert("task aggiunta correttamente");
+      navigate("/");
       setTaskTitle("");
       descriptionRef.current.value = "";
       statusRef.current.value = "";
